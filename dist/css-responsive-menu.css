@@ -1,0 +1,28 @@
+.css-responsive-menu .expand-control {
+  display: none;
+}
+.css-responsive-menu ul.navigation-list {
+  list-style: none;
+}
+.css-responsive-menu ul.navigation-list li {
+  display: inline;
+}
+@media (max-width: 500px) {
+  .css-responsive-menu label.expand-control {
+    display: inline;
+  }
+  .css-responsive-menu input[type="checkbox"].expand-control:checked + ul.navigation-list {
+    display: block;
+  }
+  .css-responsive-menu ul.navigation-list {
+    display: none;
+  }
+  .css-responsive-menu ul.navigation-list li {
+    display: block;
+  }
+}
+/* Larger than mobile */
+/* Larger than phablet (also point when grid becomes active) */
+/* Larger than tablet */
+/* Larger than desktop */
+/* Larger than Desktop HD */
