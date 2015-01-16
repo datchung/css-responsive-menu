@@ -1,0 +1,26 @@
+{
+  "name": "css-responsive-menu",
+  "version": "0.0.0",
+  "homepage": "https://datchung.com",
+  "authors": [
+    "datchung <innochi.contact@gmail.com>"
+  ],
+  "description": "Dat Chung",
+  "main": "index.html",
+  "keywords": [
+    "dat",
+    "chung",
+    "dat chung",
+    "datchung"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  }
+}
