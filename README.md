@@ -15,14 +15,14 @@
     <li>Link to the css file in your html page.</li>
     <li>
         Use the following code template for the menu:
-        <pre><code>      &#x3C;div class=&#x22;css-responsive-menu&#x22;&#x3E;
-      &#x3C;label for=&#x22;hidden-checkbox1&#x22; class=&#x22;expand-control&#x22;&#x3E;Menu&#x3C;/label&#x3E;
-      &#x3C;input type=&#x22;checkbox&#x22; id=&#x22;hidden-checkbox1&#x22; class=&#x22;expand-control&#x22;&#x3E;
+        <pre><code>&#x3C;div class=&#x22;css-responsive-menu&#x22;&#x3E;
+  &#x3C;label for=&#x22;hidden-checkbox1&#x22; class=&#x22;expand-control&#x22;&#x3E;Menu&#x3C;/label&#x3E;
+  &#x3C;input type=&#x22;checkbox&#x22; id=&#x22;hidden-checkbox1&#x22; class=&#x22;expand-control&#x22;&#x3E;
 
-      &#x3C;ul class=&#x22;navigation-list&#x22;&#x3E;
-        &#x3C;li&#x3E;&#x3C;a href=&#x22;about.html&#x22;&#x3E;about&#x3C;/a&#x3E;&#x3C;/li&#x3E;
-        &#x3C;li&#x3E;&#x3C;a href=&#x22;contact.html&#x22;&#x3E;contact&#x3C;/a&#x3E;&#x3C;/li&#x3E;
-      &#x3C;/ul&#x3E;
-    &#x3C;/div&#x3E;</code></pre>
+  &#x3C;ul class=&#x22;navigation-list&#x22;&#x3E;
+    &#x3C;li&#x3E;&#x3C;a href=&#x22;about.html&#x22;&#x3E;about&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+    &#x3C;li&#x3E;&#x3C;a href=&#x22;contact.html&#x22;&#x3E;contact&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+  &#x3C;/ul&#x3E;
+&#x3C;/div&#x3E;</code></pre>
     </li>
 </ol>
