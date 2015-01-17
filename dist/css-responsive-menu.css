@@ -7,8 +7,8 @@ want to apply your own styles.
   padding: 10px;
 }
 .css-responsive-menu ul.navigation-list {
-  padding-left: 0px;
-  margin: 0px;
+  padding-left: 0;
+  margin: 0;
 }
 .css-responsive-menu ul.navigation-list li a {
   text-decoration: none;
@@ -16,13 +16,13 @@ want to apply your own styles.
 @media (max-width: 500px) {
   .css-responsive-menu ul.navigation-list {
     margin-top: 16px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
   .css-responsive-menu ul.navigation-list li {
     margin-bottom: 10px;
   }
   .css-responsive-menu ul.navigation-list li:last-child {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 }
 
