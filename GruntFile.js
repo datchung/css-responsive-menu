@@ -1,11 +1,12 @@
 module.exports = function(grunt) {
 
-  var tasks = ['less', 'cssmin', 'csslint'];
+  var tasks = ['less', 'cssmin', 'csslint', 'compress'];
 
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-csslint');
+  grunt.loadNpmTasks('grunt-contrib-compress');
 
   // Project configuration.
   grunt.initConfig({
@@ -51,6 +52,15 @@ module.exports = function(grunt) {
       //   },
       //   src: ['path/to/**/*.css']
       // }
+    },
+
+    compress: {
+      main: {
+        options: {
+          archive: 'dist/css-responsive-menu.zip'
+        },
+        src: ['dist/*.css']
+      }
     }
   });
 

@@ -1,8 +1,8 @@
-<h1>Pure CSS Responsive Menu</h1>
+<h1>CSS Responsive Menu</h1>
 
 <h2>Introduction</h2>
 <p>
-    A responsive navigation menu written in CSS, no JavaScript used. This is reeeaally barebones, only the required styles are implemented. You can use your own styles on top of what is here to make it look how you want it to.
+    A responsive navigation menu written in CSS, no JavaScript used. The styles are pretty barebones, only the required ones are implemented, which keeps things light. You can use your own styles on top of what is here to make it look how you want it to.
 </p>
 
 <p>

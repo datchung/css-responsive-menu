@@ -1,0 +1,11 @@
+.topOfPage {
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+.topOfPage h1 {
+    text-decoration: none;
+}
+
+div.wrap-center {
+    text-align: center;
+}

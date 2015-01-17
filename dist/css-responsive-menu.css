@@ -10,6 +10,9 @@ want to apply your own styles.
   padding-left: 0;
   margin: 0;
 }
+.css-responsive-menu ul.navigation-list li {
+  padding-right: 15px;
+}
 .css-responsive-menu ul.navigation-list li a {
   text-decoration: none;
 }
@@ -19,6 +22,7 @@ want to apply your own styles.
     margin-bottom: 0;
   }
   .css-responsive-menu ul.navigation-list li {
+    padding-right: 0;
     margin-bottom: 10px;
   }
   .css-responsive-menu ul.navigation-list li:last-child {

@@ -7,7 +7,10 @@
     <meta name="author" content="css-responsive-menu">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+    <link rel="stylesheet" href="vendor/skeleton/css/normalize.css" />
+    <link rel="stylesheet" href="vendor/skeleton/css/skeleton.css" />
     <link rel="stylesheet" href="dist/css-responsive-menu.css" />
+    <link rel="stylesheet" href="css/home.css" />
   </head>
   <body>
     <div class="css-responsive-menu">
@@ -15,12 +18,35 @@
       <input type="checkbox" id="hidden-checkbox1" class="expand-control">
 
       <ul class="navigation-list">
-        <li><a href="about.html">about</a></li>
-        <li><a href="contact.html">contact</a></li>
+        <li><a href="about.html">Getting Started</a></li>
+        <li><a href="contact.html">Contribute</a></li>
       </ul>
     </div>
 
-    <h1><a href="index.html">css-responsive-menu</a></h1>
-    <p>Welcome to the demo.</p>
+    <div class="container">
+      <div class="row">
+        <div class="twelve columns topOfPage">
+          <div class="wrap-center">
+            <h1><a href="index.html">css-responsive-menu</a></h1>
+            <a class="button button-primary" href="https://github.com/datchung/css-responsive-menu/blob/master/dist/css-responsive-menu.zip?raw=true">Download</a>
+            <p><a href="https://github.com/datchung/css-responsive-menus">GitHub</a></p>
+          </div>
+        </div>
+        <div class="twelve columns">
+          <h2>What is it?</h2>
+          <p>
+              A responsive navigation menu written in CSS, no JavaScript used. The styles are pretty barebones, only the required ones are implemented, which keeps things light. You can use your own styles on top of what is here to make it look how you want it to.
+          </p>
+          <p>
+              In larger browser windows, the menu items are shown horizontally. In smaller browser windows, menu items are hidden until the 'Menu' is clicked. To see this in action, try resizing the width of your browser and observe the topmost menu bar.
+          </p>
+
+          <h2>Why?</h2>
+          <p>
+            While there are other responsive navigation menus available, most of them require JavaScript to function. This one doesn't.
+          </p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
