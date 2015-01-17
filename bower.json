@@ -8,10 +8,10 @@
   "description": "Dat Chung",
   "main": "index.html",
   "keywords": [
-    "dat",
-    "chung",
-    "dat chung",
-    "datchung"
+    "menu",
+    "navigation",
+    "responsive",
+    "css"
   ],
   "license": "MIT",
   "ignore": [
