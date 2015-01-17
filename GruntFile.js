@@ -1,12 +1,14 @@
 module.exports = function(grunt) {
 
-  var tasks = ['less', 'cssmin', 'csslint', 'compress'];
+  var tasks = ['less', 'cssmin', 'header', 'csslint', 'compress', 'clean'];
 
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-header');
   grunt.loadNpmTasks('grunt-contrib-csslint');
   grunt.loadNpmTasks('grunt-contrib-compress');
+  grunt.loadNpmTasks('grunt-contrib-clean');
 
   // Project configuration.
   grunt.initConfig({
@@ -26,7 +28,7 @@ module.exports = function(grunt) {
     less: {
       all: {
         files: {
-          'dist/css-responsive-menu.css': 'css/*.less'
+          'build/css-responsive-menu.css': 'css/*.less'
         }
       }
     },
@@ -34,9 +36,22 @@ module.exports = function(grunt) {
     cssmin: {
       target: {
         files: {
-          'dist/css-responsive-menu.min.css': ['dist/css-responsive-menu.css']
+          'build/css-responsive-menu.min.css': ['build/css-responsive-menu.css']
         }
       }
+    },
+
+    header: {
+        dist: {
+            options: {
+                text: '/* <%= pkg.title %> v<%= pkg.version %> | <%= pkg.homepage %> | ' + 
+                  'Licensed <%= pkg.license %> | Built <%= grunt.template.today() %> */'
+            },
+            files: {
+                'dist/css-responsive-menu.css': 'build/css-responsive-menu.css',
+                'dist/css-responsive-menu.min.css': 'build/css-responsive-menu.min.css'
+            }
+        }
     },
 
     csslint: {
@@ -61,7 +76,9 @@ module.exports = function(grunt) {
         },
         src: ['dist/*.css']
       }
-    }
+    },
+
+    clean: ["build"]
   });
 
   grunt.registerTask('default', ['watch']);
