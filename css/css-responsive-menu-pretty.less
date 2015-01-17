@@ -1,0 +1,39 @@
+/*
+OPtional styles to make things look prettier. You can ignore this file if you 
+want to apply your own styles.
+*/
+
+// Large screen menu bar
+.css-responsive-menu {
+    background-color: #eeeeee;
+    padding: 10px;
+
+    ul.navigation-list {
+        padding-left: 0px;
+        margin: 0px;
+
+        li {
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+// Small screen menu bar
+@media (max-width: 500px) {
+    .css-responsive-menu {
+        ul.navigation-list {
+            margin-top: 16px;
+            margin-bottom: 0px;
+
+            li {
+                margin-bottom: 10px;
+            }
+
+            li:last-child {
+                margin-bottom: 0px;
+            }
+        }
+    }
+}

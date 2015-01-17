@@ -6,7 +6,7 @@
 </p>
 
 <p>
-    In larger browser windows, the menu items are shown horizontally. In smaller browser windows, menu items are hidden until the 'menu' is clicked.
+    In larger browser windows, the menu items are shown horizontally. In smaller browser windows, menu items are hidden until the 'Menu' is clicked.
 </p>
 
 <h2>Getting Started</h2>

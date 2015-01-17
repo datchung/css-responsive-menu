@@ -1,32 +1,34 @@
 /*
-OPtional styles to make things look pretty. You can ignore this file if you 
+OPtional styles to make things look prettier. You can ignore this file if you 
 want to apply your own styles.
 */
-.css-responsive-menu .expand-control {
-  display: none;
-  cursor: pointer;
+.css-responsive-menu {
+  background-color: #eeeeee;
+  padding: 10px;
 }
 .css-responsive-menu ul.navigation-list {
-  list-style: none;
+  padding-left: 0px;
+  margin: 0px;
 }
-.css-responsive-menu ul.navigation-list li {
-  display: inline;
+.css-responsive-menu ul.navigation-list li a {
+  text-decoration: none;
 }
 @media (max-width: 500px) {
-  .css-responsive-menu label.expand-control {
-    display: inline;
-  }
-  .css-responsive-menu input[type="checkbox"].expand-control:checked + ul.navigation-list {
-    display: block;
-  }
   .css-responsive-menu ul.navigation-list {
-    display: none;
+    margin-top: 16px;
+    margin-bottom: 0px;
   }
   .css-responsive-menu ul.navigation-list li {
-    display: block;
+    margin-bottom: 10px;
+  }
+  .css-responsive-menu ul.navigation-list li:last-child {
+    margin-bottom: 0px;
   }
 }
 
+/*
+Core styles necessary for responsive menu.
+*/
 .css-responsive-menu .expand-control {
   display: none;
 }
