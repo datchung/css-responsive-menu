@@ -7,18 +7,22 @@ want to apply your own styles.
 @menu-spacing: 10px;
 
 // Large screen menu bar
-.css-responsive-menu {
+.menu-filler {
     background-color: @menu-color;
-    padding: @menu-spacing;
 
-    ul.navigation-list {
-        padding-left: 0;
-        margin: 0;
+    .css-responsive-menu {
+        background-color: @menu-color;
+        padding: @menu-spacing 0 @menu-spacing 0;
 
-        li {
-            padding-right: 15px;
-            a {
-                text-decoration: none;
+        ul.navigation-list {
+            padding-left: 0;
+            margin: 0;
+
+            li {
+                padding-right: 15px;
+                a {
+                    text-decoration: none;
+                }
             }
         }
     }
@@ -26,26 +30,30 @@ want to apply your own styles.
 
 // Small screen menu bar
 @media (max-width: 500px) {
-    .css-responsive-menu {
+    .menu-filler {
         background-color: transparent;
 
-        .button {
-            margin-bottom: 0;
-        }
+        .css-responsive-menu {
+            background-color: transparent;
 
-        ul.navigation-list {
-            background-color: @menu-color;
-            border-radius: 4px;
-            padding: @menu-spacing;
-            margin: 0;
-
-            li {
-                padding-right: 0;
-                margin-bottom: @menu-spacing;
+            .button {
+                margin-bottom: 0;
             }
 
-            li:last-child {
-                margin-bottom: 0;
+            ul.navigation-list {
+                background-color: @menu-color;
+                border-radius: 4px;
+                padding: @menu-spacing;
+                margin: 0;
+
+                li {
+                    padding-right: 0;
+                    margin-bottom: @menu-spacing;
+                }
+
+                li:last-child {
+                    margin-bottom: 0;
+                }
             }
         }
     }
