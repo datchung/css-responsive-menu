@@ -7,54 +7,58 @@ want to apply your own styles.
 @menu-spacing: 10px;
 
 // Large screen menu bar
-.menu-filler {
+.css-responsive-menu {
     background-color: @menu-color;
+    padding: @menu-spacing;
 
-    .css-responsive-menu {
-        background-color: @menu-color;
-        padding: @menu-spacing 0 @menu-spacing 0;
+    ul.navigation-list {
+        padding-left: 0;
+        margin: 0;
 
-        ul.navigation-list {
-            padding-left: 0;
-            margin: 0;
-
-            li {
-                padding-right: 15px;
-                a {
-                    text-decoration: none;
-                }
+        li {
+            padding-right: 15px;
+            a {
+                text-decoration: none;
             }
         }
     }
 }
 
+.menu-filler {
+    background-color: @menu-color;
+
+    .css-responsive-menu {
+        padding: @menu-spacing 0 @menu-spacing 0;
+    }
+}
+
 // Small screen menu bar
 @media (max-width: 500px) {
-    .menu-filler {
+    .css-responsive-menu {
         background-color: transparent;
 
-        .css-responsive-menu {
-            background-color: transparent;
+        .button {
+            margin-bottom: 0;
+        }
 
-            .button {
+        ul.navigation-list {
+            background-color: @menu-color;
+            border-radius: 4px;
+            padding: @menu-spacing;
+            margin: 0;
+
+            li {
+                padding-right: 0;
+                margin-bottom: @menu-spacing;
+            }
+
+            li:last-child {
                 margin-bottom: 0;
             }
-
-            ul.navigation-list {
-                background-color: @menu-color;
-                border-radius: 4px;
-                padding: @menu-spacing;
-                margin: 0;
-
-                li {
-                    padding-right: 0;
-                    margin-bottom: @menu-spacing;
-                }
-
-                li:last-child {
-                    margin-bottom: 0;
-                }
-            }
         }
+    }
+
+    .menu-filler {
+        background-color: transparent;
     }
 }
