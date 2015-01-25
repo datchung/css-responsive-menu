@@ -1,4 +1,4 @@
-/*!  v0.0.1 | http://datchung.com/css-responsive-menu/ | Licensed MIT | Built Sat Jan 24 2015 22:54:28 */
+/*!  v0.0.1 | http://datchung.com/css-responsive-menu/ | Licensed MIT | Built Sat Jan 24 2015 23:58:17 */
 /*
 OPtional styles to make things look prettier. You can ignore this file if you 
 want to apply your own styles.
@@ -18,9 +18,17 @@ want to apply your own styles.
   text-decoration: none;
 }
 @media (max-width: 500px) {
-  .css-responsive-menu ul.navigation-list {
-    margin-top: 16px;
+  .css-responsive-menu {
+    background-color: transparent;
+  }
+  .css-responsive-menu .button {
     margin-bottom: 0;
+  }
+  .css-responsive-menu ul.navigation-list {
+    background-color: #eeeeee;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 0;
   }
   .css-responsive-menu ul.navigation-list li {
     padding-right: 0;

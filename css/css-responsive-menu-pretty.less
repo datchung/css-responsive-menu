@@ -4,11 +4,12 @@ want to apply your own styles.
 */
 
 @menu-color: #eeeeee;
+@menu-spacing: 10px;
 
 // Large screen menu bar
 .css-responsive-menu {
     background-color: @menu-color;
-    padding: 10px;
+    padding: @menu-spacing;
 
     ul.navigation-list {
         padding-left: 0;
@@ -26,13 +27,21 @@ want to apply your own styles.
 // Small screen menu bar
 @media (max-width: 500px) {
     .css-responsive-menu {
-        ul.navigation-list {
-            margin-top: 16px;
+        background-color: transparent;
+
+        .button {
             margin-bottom: 0;
+        }
+
+        ul.navigation-list {
+            background-color: @menu-color;
+            border-radius: 4px;
+            padding: @menu-spacing;
+            margin: 0;
 
             li {
                 padding-right: 0;
-                margin-bottom: 10px;
+                margin-bottom: @menu-spacing;
             }
 
             li:last-child {
