@@ -44,7 +44,7 @@ module.exports = function(grunt) {
     header: {
         dist: {
             options: {
-                text: '/* <%= pkg.title %> v<%= pkg.version %> | <%= pkg.homepage %> | ' + 
+                text: '/*! <%= pkg.title %> v<%= pkg.version %> | <%= pkg.homepage %> | ' + 
                   'Licensed <%= pkg.license %> | Built <%= grunt.template.today() %> */'
             },
             files: {
